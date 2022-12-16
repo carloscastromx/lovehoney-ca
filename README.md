@@ -1,1 +1,1 @@
-# lovehoney-ca
+# Lovehoney
