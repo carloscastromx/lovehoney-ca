@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%; /* 1rem /= 10px */
+}
+/*Tamaños de fuente responsivos*/
+h1{
+    font-size: clamp(2.7648rem, calc(1.5611119444vw + 2.2652441778rem), 4.2634674666rem);
+}
+h2{
+    font-size: clamp(2.304rem, calc(0.931666875vw + 2.0058666rem), 3.1984002rem);
+}
+h3{
+    font-size: clamp(1.92rem, calc(0.499375vw + 1.7602rem), 2.3994rem);
+}
+h4{
+    font-size: clamp(1.6rem, calc(0.2083333333vw + 1.5333333333rem), 1.8rem);
+}
+h5{
+    font-size: clamp(1.2rem, calc(0vw + 1.2rem), 1.2rem);
+}
+h6{
+    font-size: clamp(1.1rem, calc(0vw + 1.1rem), 1.1rem);
+}
+body{
+    font-size: clamp(calc(1.4 * 1rem),calc(1.4 * 1rem + ((1vw - ( 32 / 100) * 1rem) * (100 * ( 1.8 - 1.4) / ( 128 - 32)))),calc(1.8 * 1rem));
+}
