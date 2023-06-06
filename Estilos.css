@@ -1,0 +1,756 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+.Logo{
+    width: 180px;
+    height: 28px;
+
+}
+
+.barra_nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Contenido-Principal{
+    height: auto;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    color: #5119A6;
+}
+
+.menu{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 150px 10px 10px;
+    gap: 15px;
+    color: rgb(54, 54, 54);
+    letter-spacing: 0.10em;
+
+}
+
+.About{
+    padding-top: 65px;
+    line-height: 40px;
+    padding-bottom: 40px;
+}
+
+.About-txt{
+    color: #888888;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.About-txt h1{
+    color: #5119A6;
+    font-weight: 700;
+    font-size: 64px;
+}
+.About-txt h3{
+    color: #FF274D;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.C-about{
+    background-color: #FF274D;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.About-imgtxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 3200px;
+    height: 256px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.C-Vibrators,.C-Couples,.C-Cockrings{
+    padding-bottom: 100px;
+}
+
+.Vibrators-txt{
+    color: #888888;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    margin-bottom: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-transform: uppercase;
+}
+
+.Vibrators-txt h2{
+    color: #5119A6;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+
+.P-Vibrators,.P-Couples,.P-Cockring{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 450px;
+    gap: 10px;
+    height: 407px;
+    background: #EDEDED;
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.Producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 10px;
+    gap: 10px;
+    width: 294px;
+    height: 387px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.productotxt p{
+    color:#888888;
+    line-height: 4.5;
+}
+
+.productotxt h5{
+    color: #5119A6;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.D-Boton{
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.Boton{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 143px;
+    height: 47px;
+    background: #5119A6;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.Boton a{
+    text-decoration: none;
+    color: white;
+}
+
+.Boton :hover{
+    color: red;  
+}
+
+.Banner{
+    padding-bottom: 150px;
+}
+
+.Encabezado{
+    height: 50px;
+    background-color: #FF274D;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Encabezadotxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2.5;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+.Encabezadotxt h3{
+    color: #5119A6;
+}
+
+.Encabezadoinfo{
+    width: 850px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    height: 575px;
+    background: #EDEDED;
+    box-shadow: 0px 18px 40px rgba(24, 0, 60, 0.25);
+    margin-bottom: 90px;
+}
+
+.infoproducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 555px;
+    background: #FF274D;
+    color: white;
+    line-height: 3;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.infoproductotxt{
+    width: 200px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.infoproductotxt h4{
+    font-size: 28px;
+    width: 200px;
+    font-weight: 600;
+}
+
+.precio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 147px;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    background: #FFFFFF;
+    color: #5119A6;
+    border-radius: 25px;
+}
+
+.productoboton{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding: 10px;
+    width: 118px;
+    height: 42px;
+    background: #5119A6;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.productoboton a{
+    text-decoration: none;
+    color: white;
+}
+
+.productoboton a:hover{
+    color: red;
+}
+
+.imgproducto{
+    display: flex;
+    width: 510px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.img-contenedor{
+    height: 500px;
+    width: 400px;
+    border-radius: 5%;
+    box-shadow: 0 5px 5px rgb(1,23,46,0.6);
+    object-fit: cover;
+}
+
+.imgprincipal{
+    height: 500px;
+    width: 400px;
+    border-radius: 5%;
+}
+
+.contenedorseleccion{
+    display: flex;
+    flex-direction: column;
+    height: 512px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.seleccion {
+    width: 100px;
+    border-radius: 5%;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: .7;
+}
+
+.seleccion:hover{
+    opacity: 1;
+}
+
+.activo{
+    width: 100px;
+    opacity: 1 !important;
+    border-radius: 15%;
+    box-shadow: 0 5px 5px rgb(1,23,46,0.6);
+}
+
+.caracteristicas{
+    height: 555px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.caracteristicas h4{
+    font-size: 30px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.caracteristicastxt{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.ctxt{
+    width: 400px;
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.ctxt h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 150px;
+    border-width: 2px 0px;
+    border-style: solid;
+    border-color: #CECECE;
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 90px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.descripcion h4{
+    color: #2b2b2b;
+    font-size: 30px;
+}
+
+.descripciontxt{
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #5A5A5A;
+    padding-top: 40px;
+}
+
+.descripciontxt h4{
+    font-size: 16px;
+}
+
+.especificaciones{
+    height: 492px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 0px 0px 15px;
+    margin-bottom: 90px;
+}
+
+.especititulo{
+    display: flex;
+    padding-left: 127px;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.especititulo h4{
+    color: #2b2b2b;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.especi{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.especificacionestxt{
+    text-transform: uppercase;
+    line-height: 2;
+    color: #5A5A5A;
+    width: 300px;
+    height: 300px;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 708px;
+    background: #EDEDED;
+    box-shadow: 0px 18px 40px rgba(81, 25, 166, 0.15);
+    border-radius: 0px 15px 15px 0px;
+    margin-bottom: 90px;
+}
+
+.ratingbox{
+    background-color: #FFFFFF;
+    width: 914px;
+    height: 608px;
+    border-radius: 15px 15px 0px 0px;
+    filter: drop-shadow(0px 18px 40px rgba(0, 0, 0, 0.25));
+    
+}
+
+.ratingtitulo{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 75px;
+    gap: 10px;
+    width: 914px;
+    height: 53px;
+    background: #5119A6;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.calificacion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calificaciontxt{
+    color: #4b4b4b;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2.8;
+    text-transform: uppercase;
+}
+
+.calificaciontxt h4{
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.calitxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estrellas{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    align-items: center;
+}
+
+.lineah{
+    border-left: 1px solid #464646;
+    height: 400px;
+    margin-top: 70px;
+}
+
+.puntaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+.puntajetxt{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 320px;
+}
+
+.circulos{
+    display: flex;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.Faqs{
+    background-color: #5A5A5A;
+    height: 673px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.Faqscontenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1396px;
+    height: 400px;
+    background: #EDEDED;
+    border-radius: 25px;
+}
+
+.Faqstitulo{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 80px;
+    width: 1396px;
+    height: 178px;
+    color: white;
+    background: #863BF6;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.Faqsttltxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.Faqsttltxt h4{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.Faqsbottom{
+    display: flex;
+    justify-content: space-around;
+    width: 1070px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.Faqsizquierdo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Faqsizquierdo h4{
+    color: #404040;
+    font-size: 32px;
+}
+
+.Faqsderecho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+}
+
+.preguntastxt{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.preguntasd{
+    background: #863BF6;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.faqsboton{
+    background-color: #FF274D;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer{
+    background-color: #5119A6;
+    padding: 25px;
+}
+
+.C-Footer{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Pago{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.Pago-Boton{
+    width: 90px;
+    height: 38.14px;
+    left: 35px;
+    top: 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 40px -12px rgba(255, 39, 77, 0.35);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer-txt{
+    width: 800px;
+    height: auto;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1070px){
+    .imghero{
+        width: 1070px;
+    }
+
+    .Contenido-Principal, .producto,.banner,.Faqs,.Faqscontenedor,.Faqstitulo{
+        width: 1070px;
+    }
+    
+    .infoproducto{
+        width: 220px;
+    }
+
+    .infoproductotxt h4{
+        width: 210px;
+    }
+
+    .caracteristicastxt{
+        width: 310px;
+    }
+
+    .ctxt{
+        font-size: 12px;
+        width: 245px;
+    }
+    
+    .caracteristicas h4{
+        font-size: 20px;
+    }
+
+    .imgcaracteristicas{
+        width: 50px;
+        height: 50px;
+    }
+
+    .especi{
+        padding-left: 30px;
+    }
+ 
+}
+
+@media only screen and (max-width: 799px){
+    .imghero{
+        width: 799px;
+    }
+
+    .Contenido-Principal,.banner,.Encabezadoinfo,.ratingbox,.ratingtitulo,.Faqs,.Faqscontenedor,.Faqsbottom,.Faqstitulo{
+        width: 799px;
+    }
+
+    .producto{
+        display: flex;
+        flex-direction: column;
+        height: 1900px;
+        justify-content: space-evenly;
+    }
+
+    .infoproducto{
+        width: 799px;
+    }
+
+    .especi{
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .especificacionestxt{
+        width: 195px;
+    }
+
+    .Pago{
+        width: 650px;
+    }
+}
