@@ -8,7 +8,22 @@
 
 html{
     scroll-behavior: smooth;
+    position: relative;
+}
+
+html::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(bg-pattern.png);
+    background-size: contain;
+    background-repeat: repeat;
+    z-index: -1;
+    opacity: 0.2;
 }
 
 .Logo{
@@ -141,7 +156,7 @@ header a:hover{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 3200px;
+    width: 320px;
     height: 256px;
     color: white;
     font-size: 24px;
@@ -758,16 +773,73 @@ img.imgcaracteristicas {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1070px){
+    .main-banner{
+        background-size: contain;
+        height: 328px;
+    }
+
+    .main-title{
+        font-size: 28px;
+    }
+
+    .main-text{
+        font-size: 55px;
+    }
+
+    .subtitle{
+        width: 90%;
+        margin: auto;
+    }
+
     .imghero{
-        width: 1070px;
+        width: 100%;
     }
 
     .Contenido-Principal, .producto,.banner,.Faqs,.Faqscontenedor,.Faqstitulo{
-        width: 1070px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .Encabezadotxt{
+        padding: 0;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .Encabezadoinfo{
+        width: 100%;
+    }
+
+    .P-Vibrators, .P-Couples, .P-Cockring{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 40px;
+        height: auto;
+        padding: 40px;
+    }
+
+    .C-about{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Producto{
+        width: auto;
     }
     
     .infoproducto{
-        width: 220px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .imgproducto{
+        justify-content: space-around;
     }
 
     .infoproductotxt h4{
@@ -775,16 +847,17 @@ img.imgcaracteristicas {
     }
 
     .caracteristicastxt{
-        width: 310px;
+        width: 100%;
     }
 
     .ctxt{
         font-size: 12px;
-        width: 245px;
+        width: 100%;
     }
     
     .caracteristicas h4{
         font-size: 20px;
+        text-align: center;
     }
 
     .imgcaracteristicas{
@@ -792,19 +865,87 @@ img.imgcaracteristicas {
         height: 50px;
     }
 
+    .especificaciones{
+        height: auto;
+    }
+
     .especi{
         padding-left: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 40px;
+        gap: 70px;
+    }
+
+    .especificacionestxt{
+        width: auto;
+        height: auto;
+    }
+
+    .Faqsbottom{
+        flex-direction: column;
     }
  
 }
 
 @media only screen and (max-width: 799px){
+    .main-text, .About-txt h1{
+        font-size: 50px;
+    }
+
+    .C-about{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .About-imgtxt{
+        width: 100%;
+    }
+
+    .Vibrators-txt{
+        padding: 20px;
+    }
+
+    .P-Vibrators, .P-Couples, .P-Cockring{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .Banner{
+        flex-direction: column;
+    }
+
+    .Banner .lovehoney-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Banner img{
+        width: 40%;
+    }
+
+    .Banner p{
+        font-size: 40px;
+    }
+
+    .barra_nav{
+        flex-direction: column;
+    }
+
     .imghero{
-        width: 799px;
+        width: 100%;
     }
 
     .Contenido-Principal,.banner,.Encabezadoinfo,.ratingbox,.ratingtitulo,.Faqs,.Faqscontenedor,.Faqsbottom,.Faqstitulo{
-        width: 799px;
+        width: 100%;
+    }
+
+    .Encabezadotxt{
+        padding: 15px;
     }
 
     .producto{
@@ -815,19 +956,120 @@ img.imgcaracteristicas {
     }
 
     .infoproducto{
-        width: 799px;
+        width: 100%;
+        height: auto;
+    }
+
+    .imgproducto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedorseleccion{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        order: 1;
+        margin-top: 50px;
+    }
+
+    .img-contenedor{
+        order: 0;
+        width: 90%;
+        height: auto;
+    }
+
+    .imgprincipal{
+        width: 100%;
+        height: 100%;
     }
 
     .especi{
         padding-left: 20px;
         font-size: 14px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .especificaciones{
+        height: auto;
+        margin: auto;
+        width: 95%;
+        margin-top: 30px;
+    }
+
+    .especititulo{
+        padding: 0;
+        justify-content: center;
+        padding-top: 15px;
     }
 
     .especificacionestxt{
-        width: 195px;
+        width: 100%;
+        height: auto;
     }
 
     .Pago{
-        width: 650px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .descripcion{
+        padding: 20px;
+        padding: 20px;
+        letter-spacing: 1px;
+        margin: auto;
+        width: 95%;
+    }
+
+    .calificacion{
+        flex-direction: column;
+    }
+
+    .puntaje{
+        gap: 10px;
+    }
+
+    .ratingbox{
+        height: auto;
+        padding: 20px;
+    }
+
+    .puntajetxt p{
+        font-size: 14px;
+    }
+
+    .lineah{
+        display: none;
+    }
+
+    .Faqscontenedor, .Faqstitulo{
+        height: auto;
+    }
+
+    .Faqsbottom{
+        flex-direction: column;
+    }
+
+    .preguntastxt{
+        width: 100%;
+    }
+
+    .faqsboton{
+        margin-left: 15px;
+    }
+
+    .Logo-Footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Logo-Footer img{
+        width: 80%;
+    }
+
+    .Footer-txt{
+        width: 100%;
     }
 }
