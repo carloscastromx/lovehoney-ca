@@ -1,23 +1,51 @@
-const cr1 = document.querySelector('.cr1')
-const seleccion = document.querySelectorAll('.seleccion')
+var cr1 = document.querySelector('.cr1')
+var seleccion1 = [...document.querySelectorAll('.s1 .seleccion')]
 
-seleccion.forEach(seleccion => {
+seleccion1.forEach(seleccion => {
     seleccion.addEventListener('click', function(){
-        const activo = document.querySelector('.activo')
+        
+        document.querySelectorAll('.activo')[0].classList.remove('activo')
         seleccion.classList.add('activo')
-        activo.classList.remove('activo')
-        cr1.src = seleccion.src 
+
+        cr1.setAttribute("src", seleccion.getAttribute("src"))
     })
 })
 
-const cr2 = document.querySelector('.cr2')
-const selectcr2 = document.querySelectorAll('.seleccion')
+var cr2 = document.querySelector('.cr2')
+var seleccion2 = [...document.querySelectorAll('.s2 .seleccion')]
 
-seleccion.forEach(seleccion => {
-    selectcr2.addEventListener('click', function(){
-        const activocr2 = document.querySelector('.activo')
+seleccion2.forEach(seleccion => {
+    seleccion.addEventListener('click', function(){
+        
+        document.querySelectorAll('.activo')[1].classList.remove('activo')
         seleccion.classList.add('activo')
-        activo.classList.remove('activo')
-        cr2.src = seleccion.src 
+
+        cr2.setAttribute("src", seleccion.getAttribute("src"))
+    })
+})
+
+var cr3 = document.querySelector('.cr3')
+var seleccion3 = [...document.querySelectorAll('.s3 .seleccion')]
+
+seleccion3.forEach(seleccion => {
+    seleccion.addEventListener('click', function(){
+        
+        document.querySelectorAll('.activo')[2].classList.remove('activo')
+        seleccion.classList.add('activo')
+
+        cr3.setAttribute("src", seleccion.getAttribute("src"))
+    })
+})
+
+var cr4 = document.querySelector('.cr4')
+var seleccion4 = [...document.querySelectorAll('.s4 .seleccion')]
+
+seleccion4.forEach(seleccion => {
+    seleccion.addEventListener('click', function(){
+        
+        document.querySelectorAll('.activo')[3].classList.remove('activo')
+        seleccion.classList.add('activo')
+
+        cr4.setAttribute("src", seleccion.getAttribute("src"))
     })
 })
