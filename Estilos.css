@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito';
 }  
 
 .Logo{
@@ -30,7 +32,6 @@ header a:hover{
 }
 
 .menu{
-    font-family: Nunito;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
