@@ -50,15 +50,19 @@ seleccion4.forEach(seleccion => {
     })
 })
 
-var c1 = document.querySelector('.c1')
-var seleccion5 = [...document.querySelectorAll('.s5 .seleccion')]
+//FAQs
+document.querySelector(".faq-1").addEventListener('click', function(){
+    document.querySelector(".faq-1-a").classList.toggle('active');
+})
 
-seleccion5.forEach(seleccion => {
-    seleccion.addEventListener('click', function(){
-        
-        document.querySelectorAll('.activo')[4].classList.remove('activo')
-        seleccion.classList.add('activo')
+document.querySelector(".faq-2").addEventListener('click', function(){
+    document.querySelector(".faq-2-a").classList.toggle('active');
+})
 
-        c1.setAttribute("src", seleccion.getAttribute("src"))
-    })
+document.querySelector(".faq-3").addEventListener('click', function(){
+    document.querySelector(".faq-3-a").classList.toggle('active');
+})
+
+document.querySelector(".faq-4").addEventListener('click', function(){
+    document.querySelector(".faq-4-a").classList.toggle('active');
 })
