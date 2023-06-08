@@ -49,3 +49,16 @@ seleccion4.forEach(seleccion => {
         cr4.setAttribute("src", seleccion.getAttribute("src"))
     })
 })
+
+var c1 = document.querySelector('.c1')
+var seleccion5 = [...document.querySelectorAll('.s5 .seleccion')]
+
+seleccion5.forEach(seleccion => {
+    seleccion.addEventListener('click', function(){
+        
+        document.querySelectorAll('.activo')[4].classList.remove('activo')
+        seleccion.classList.add('activo')
+
+        c1.setAttribute("src", seleccion.getAttribute("src"))
+    })
+})
